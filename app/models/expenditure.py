@@ -11,3 +11,7 @@ class Expenditure(BaseModel):  # 支出
     type = models.CharField(max_length=64, blank=True, null=True, db_index=True)  # 类型  吃穿住行
     catalog = models.CharField(max_length=64, blank=True, null=True, db_index=True)  # 具体名录
     quantity = models.IntegerField(blank=True, null=True)  # 数量
+
+    class Meta:
+        ordering = ['-id']
+        db_table = 'app_expenditure'

@@ -128,6 +128,8 @@ USE_L10N = True
 
 USE_TZ = True
 
+Months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/

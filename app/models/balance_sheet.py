@@ -11,3 +11,7 @@ class BalanceSheet(BaseModel):  # 资产负债表
     type = models.CharField(max_length=64, blank=True, null=True, db_index=True)  # 类型 存款,微信,支付宝,投资,借出,欠债
     is_debt = models.BooleanField(default=False, db_index=True)
     note = models.CharField(max_length=255, blank=True, null=True)
+
+    class Meta:
+        ordering = ['-id']
+        db_table = 'app_balance_sheet'

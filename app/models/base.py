@@ -4,13 +4,14 @@
 
 from django.db import models
 from django_extensions.db.fields import CreationDateTimeField, ModificationDateTimeField
+from settings import Months
 
 
 class BaseModel(models.Model):
     updated_on = ModificationDateTimeField(db_index=True)
     created_on = CreationDateTimeField(db_index=True)
     year = models.IntegerField(blank=True, null=True)
-    month = models.IntegerField(blank=True, null=True)
+    month = models.IntegerField(choices=Months,blank=True, null=True)
 
     class Meta:
         abstract = True
