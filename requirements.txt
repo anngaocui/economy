@@ -18,7 +18,7 @@ django-wkhtmltopdf==3.1.0
 django-test-without-migrations==0.6
 djangorestframework-filters==0.10.2
 djangorestframework-jwt==1.11.0
-djangorestframework==3.9.4
+djangorestframework==3.11.2
 psycopg2==2.8.5
 MySQL-python==1.2.5
 ipython==5.3.0
